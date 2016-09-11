@@ -1,0 +1,12 @@
+<div class="company-details">
+    <h2>Company Details</h2>
+    <div class="company-details" ng-if='companyDetailsCtrl.company'>
+        <h3>{{ companyDetailsCtrl.company.name}}</h3>
+        <p>
+            {{ companyDetailsCtrl.company.description }}
+        </p>
+    </div>
+    <div class="company-details" ng-if='!companyDetailsCtrl.company'>
+        Select a company...
+    </div>
+</div>

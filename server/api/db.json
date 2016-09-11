@@ -1,0 +1,152 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Axial",
+      "type": "Corporation",
+      "description": "Founded in 2010, Axial is an online professional network connecting entrepreneurs, M&A advisors and capital partners. Members use Axial to discover and exchange business development and investment opportunities, create, manage and promote their company identity and expertise, and expand and engage their business development networks. In 2015, Axial's members signed over 10,000 NDAs and closed over $1.5B in total deal volume. Axial's network is designed to serve CEOs and investment professionals who are contemplating, pursuing, and executing transactions between $5M and $200M in value.",
+      "website": "http://www.axial.net",
+      "premium": true
+    },
+    {
+      "id": 2,
+      "name": "Saratoga Investment Corp (Ticker: SAR)",
+      "type": "Junior Capital Provider",
+      "description": "Saratoga Investment Corp. is a publicly traded (NYSE: SAR) business development company (BDC). We provide customized financing solutions for middle market companies located in the United States. Our investment professionals have a combined 80+ years of experience investing over $4 billion in middle market businesses.",
+      "website": "http://www.saratogainvestmentcorp.com",
+      "premium": true
+    },
+    {
+      "id": 3,
+      "name": "Bodystormer",
+      "type": "Corporation",
+      "description": "Kickass startup, breaking faces, cashing checks",
+      "website": "http://www.bodystormer.com",
+      "premium": false
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "street_1": "902 Broadway",
+      "street_2": "19th Floor",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10010",
+      "hq": true,
+      "companyId": 1
+    },
+    {
+      "id": 2,
+      "street_1": "535 Madison Avenue",
+      "street_2": "4th Floor",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10022",
+      "hq": true,
+      "companyId": 2
+    },
+    {
+      "id": 3,
+      "street_1": "1181 Ringwood Avenue",
+      "street_2": "",
+      "city": "Pompton Lakes",
+      "state": "NJ",
+      "zip_code": "07442",
+      "hq": true,
+      "companyId": 3
+    },
+    {
+      "id": 4,
+      "street_1": "500 Central Avenue",
+      "street_2": "17th Floor",
+      "city": "Union City",
+      "state": "NJ",
+      "zip_code": "07087",
+      "hq": false,
+      "companyId": 3
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "Peter Lehrman",
+      "role": "CEO",
+      "email": "peter.lehrman@axial.net",
+      "companyId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Andrew Cialino",
+      "role": "VP Sales",
+      "email": "andrew.cialino@axial.net",
+      "companyId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Dan Lee",
+      "role": "Director, Product Management",
+      "email": "dan.lee@axial.net",
+      "companyId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Nick Canderan",
+      "role": "Business Development",
+      "email": "nick.canderan@axial.net",
+      "companyId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 5,
+      "name": "Farhan Ahmed",
+      "role": "Director, Data & Analytics",
+      "email": "farhan.ahmed@axial.net",
+      "companyId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 6,
+      "name": "Joe Burkhart",
+      "role": "Managing Director",
+      "email": "joe.burkhart@axial.net",
+      "companyId": 2,
+      "locationId": 2
+    },
+    {
+      "id": 7,
+      "name": "Charles Phillips",
+      "role": "Managing Director",
+      "email": "charles.phillips@axial.net",
+      "companyId": 2,
+      "locationId": 2
+    },
+    {
+      "id": 8,
+      "name": "Mark Weaver",
+      "role": "",
+      "email": "mark.weaver@axial.net",
+      "companyId": 2,
+      "locationId": 2
+    },
+    {
+      "id": 9,
+      "name": "Xavier Lozinguez",
+      "role": "Founder",
+      "email": "xavier@bodystormer.com",
+      "companyId": 3,
+      "locationId": 3
+    },
+    {
+      "id": 9,
+      "name": "Tyson Lozinguez",
+      "role": "Pet Dog",
+      "email": "tyson@bodystormer.com",
+      "companyId": 3,
+      "locationId": 4
+    }
+  ]
+}

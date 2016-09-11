@@ -1,0 +1,18 @@
+.header,
+.container {
+    width: 100%;
+}
+
+.container {
+    .list,
+    .content {
+        display: inline-block;
+    }
+
+    .list {
+        width: 20%;
+    }
+    .content {
+        width: 80%
+    }
+}
