@@ -1,0 +1,11 @@
+client/**/*.map
+node_modules/
+dist/
+.env/
+log.html
+output.xml
+report.html
+*.png
+npm-debug.log
+.idea/
+.DS_Store

@@ -1,0 +1,48 @@
+{
+    "companies": [
+        {
+        "id": 1,
+        "name": "Axial",
+        "description": "Axial is cool"
+    }],
+    "locations": [{
+        "id": 1,
+        "street_1": "902 Broadway",
+        "street_2": "19th Floor",
+        "city": "New York",
+        "state": "NY",
+        "zip_code": "10010",
+        "company_id": 1
+    }],
+    "members": [{
+        "id": 1,
+        "name": "Peter Lehrman",
+        "role": "CEO",
+        "company_id": 1,
+        "location_id": 1
+    }, {
+        "id": 2,
+        "name": "Jeff Brown",
+        "role": "CFO",
+        "company_id": 1,
+        "location_id": 1
+    }, {
+        "id": 3,
+        "name": "Barry Marshall",
+        "role": "CPO",
+        "company_id": 1,
+        "location_id": 1
+    }, {
+        "id": 4,
+        "name": "Allison Tepley",
+        "role": "CMO",
+        "company_id": 1,
+        "location_id": 1
+    }, {
+        "id": 5,
+        "name": "Howie Altman",
+        "role": "CTO",
+        "company_id": 1,
+        "location_id": 1
+    }]
+}
