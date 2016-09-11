@@ -1,0 +1,9 @@
+<h2>Companies</h2>
+<ul class="companies-list">
+    <company-item
+        company="company"
+        ng-repeat="company in companiesCtrl.list track by $index"
+        select-company="companiesCtrl.actions.fetchCompany(company)">
+    </company-item>
+</ul>
+<company-details company="companiesCtrl.selectedCompany">Select a company...</company-details>

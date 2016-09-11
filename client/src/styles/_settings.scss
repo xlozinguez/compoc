@@ -1,0 +1,60 @@
+// FONTS
+$font-family: 'Open Sans';
+$font-size: 1rem;
+$base-ratio: .125;
+$default-font-size: $font-size - $base-ratio;
+$default-letter-spacing: .2px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 800;
+
+$h1-font-size: ($font-size + $base-ratio) * 2;
+$h2-font-size: $font-size * (2 - (2 * $base-ratio));
+$h3-font-size: $font-size + ($base-ratio * 2);
+$h4-font-size: $font-size;
+$h5-font-size: $font-size - ($base-ratio * 2);
+$h6-font-size: $font-size - ($base-ratio * 4);
+
+$h6-letter-spacing: .3px;
+
+$p-font-size: $font-size - $base-ratio;
+$p-padding-bottom: 8px;
+
+// COLORS
+$blue: (name: 'blue', r: 25, g: 131, b: 179, shade_count: 4);
+$orange: (name: 'orange', r: 216, g: 89, b: 0, shade_count: 4);
+$green: (name: 'green', r: 40, g: 120, b: 43, shade_count: 4);
+$colors: $blue $orange $green;
+
+// Below generates color shades
+@each $color in ($colors) {
+    .default-bkg-color-#{map-get($color, "name")}{
+        background-color: rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b"));
+    }
+    .default-color-#{map-get($color, "name")} {
+        color: rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b"));
+    }
+
+    @for $i from 1 through map-get($color, "shade_count") {
+        .lighter-bkg-color-#{map-get($color, "name")}-#{$i} {
+            background-color: lighten(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+        }
+        .lighter-color-#{map-get($color, "name")}-#{$i} {
+            color: lighten(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+        }
+        .darker-bkg-color-#{map-get($color, "name")}-#{$i} {
+            background-color: darken(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+        }
+        .darker-color-#{map-get($color, "name")}-#{$i} {
+            color: darken(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+        }  
+    }
+}
+
+$default-opacity: 100;
+
+$default-blue: rgb(map-get($blue, "r"), map-get($blue, "g"), map-get($blue, "b"));
+
+$a-default-color: $default-blue;

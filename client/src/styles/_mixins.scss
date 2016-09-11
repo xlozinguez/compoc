@@ -1,0 +1,15 @@
+@mixin font-smoothing($value: antialiased) {
+    @if $value == antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+// I wish they had computed properties in sass...
+// @mixin generate-color($color, $opacity: 100) {
+//     rgba(map-get($color, "r"), map-get($color, "g"), map-get($color, "b"), $opacity);
+// }
