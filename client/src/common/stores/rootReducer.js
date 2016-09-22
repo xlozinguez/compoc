@@ -8,9 +8,11 @@ import { combineReducers } from 'redux';
 import { router } from 'redux-ui-router';
 
 // our custom data reducer for the data points
-import { companyReducer } from './companies';
+import { companiesStore } from './companies.store';
+import { currentCompanyStore } from './currentCompany.store';
 
 export default combineReducers({
     router,
-    companies: companyReducer
+    companies: companiesStore,
+    currentCompany: currentCompanyStore
 });

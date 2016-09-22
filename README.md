@@ -1,6 +1,6 @@
-# Reactive RESTful Angular 1.5 application with ngrx store
+# Reactive RESTful Angular 1.5 application with Redux & RxJS
 
-A RESTful master-detail application built using Angular 1.x and [ngrx store](https://github.com/ngrx/store).
+A RESTful master-detail application built using Angular 1.5, [ng-Redux](https://github.com/angular-redux/ng-redux) and [RxJS 5](https://github.com/ReactiveX/rxjs)
 
 
 ## Stack
@@ -10,8 +10,8 @@ A RESTful master-detail application built using Angular 1.x and [ngrx store](htt
 - Angular 1.5
 - Angular UI Router (with self-registering components)
 - ES 6 / Babel (Module Loading)
-- Redux and ng-redux
-- rx-angular (RxJS Observables)
+- ng-redux (Redux)
+- @reactivex/rxjs (RxJS Observables)
 - SASS
 - Tests
   - Karma (Test Runner, http://karma-runner.github.io/)

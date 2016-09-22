@@ -3,7 +3,9 @@
     <company-item
         company="company"
         ng-repeat="company in companiesCtrl.list track by $index"
-        select-company="companiesCtrl.actions.fetchCompany(company)">
+        select-company="companiesCtrl.onCompanySelected(company)">
     </company-item>
 </ul>
-<company-details company="companiesCtrl.selectedCompany">Select a company...</company-details>
+<company-details company="companiesCtrl.currentCompany">
+    Select a company...
+</company-details>
