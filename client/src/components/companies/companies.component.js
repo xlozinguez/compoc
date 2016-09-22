@@ -1,3 +1,4 @@
+import { Observable } from '@reactivex/rxjs';
 import { Component } from 'client/src/utils';
 
 import template from './companies.html';
@@ -13,43 +14,37 @@ export class CompaniesComponent {
 
     static $inject = [
         '$ngRedux',
-        'companyActions'
+        'CompaniesService'
     ];
 
-    constructor($ngRedux, companyActions) {
+    constructor($ngRedux, CompaniesService) {
         this.$ngRedux = $ngRedux;
-        this.companyActions = companyActions;
+        this.companiesService = CompaniesService;
+        this.list = Observable.from([]);
+        this.currentCompany = Observable.of({});
     }
 
-    // bind redux state to this component, which subsribes to updates like a one way data binding
-    // in return, it provides us with the method to disconnect
     $onInit() {
+        // Connect to the store
         this.disconnect = this.$ngRedux.connect(state => ({
-            companies: state.companies
-        }), this.companyActions)((state, actions) => {
-            if (!state.companies.isLoaded) actions.fetchCompanies();
+            companies: state.companies,
+            currentCompany: state.currentCompany
+        }))((state, actions) => {
             this.actions = actions;
-            this.list = state.companies.list;
-            this.selectedCompany = state.companies.selected;
+            this.list = state.companies;
+            this.currentCompany = state.currentCompany;
         });
+
+        // Fetch Companies
+        this.companies = this.companiesService.fetchCompanies();
     }
 
-    // When the scope is destroyed, we want to disconnect from the store
     $onDestroy() {
+        // Disconnect from the store
         this.disconnect();
     }
 
-    // onCompanySelected(company) {
-    //     this.$ngRedux.dispatch({
-    //         type: 'FETCH_SELECTED_COMPANY', 
-    //         payload: {
-    //             id: company.id
-    //         }
-    //     });
-    //     // console.log(company);
-    // //     // stateGo();
-    // //     stateTransitionTo('app.company', { id: company.id })
-        
-    // //     // this.$state.go('app.company', { id: company.id });
-    // }
+    onCompanySelected(company) {
+        this.companiesService.fetchCompany(company.id);
+    }
 }

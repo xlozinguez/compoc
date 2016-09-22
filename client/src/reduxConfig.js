@@ -7,7 +7,6 @@
  */
 
 import createLogger from 'redux-logger';
-import apiMiddleware from './common/api';
 import reducers from './common/stores/rootReducer';
 
 store.$inject = ['$ngReduxProvider'];
@@ -19,7 +18,7 @@ export default function store($ngReduxProvider) {
         collapsed: true
     });
 
-    const middlewares = ['apiMiddleware', 'ngUiRouterMiddleware', logger];
+    const middlewares = ['ngUiRouterMiddleware', logger];
 
     const enhancers = [ window.devToolsExtension ? window.devToolsExtension() : f => f ];
 
