@@ -1,0 +1,51 @@
+// Default for Styleguide purposes
+.styleguide {
+    background-color: #F7F7F7;
+
+    .color-examples > li {
+        float: left;
+        margin-left: 10px;
+        display: inline-block;
+        font-weight: bold;
+        color: #4a4a4a;
+    }
+
+    .color-list {
+        width: auto;
+        padding-left: 8px;
+        color: #fff;
+        float: left;
+        display: inline-block;
+    }
+
+    .color-list > li {
+        padding: 12px;
+        width: 200px;
+        font-weight: 600;
+        letter-spacing: .4px;
+        text-transform: uppercase;
+        float: left;
+        clear: left;
+    }
+
+    .card-example {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+// // LIVE STYLEGUIDE
+// .styles {
+//     // COLORS
+//     ul.colors {
+//         font-size: 24px;
+
+//         li {
+//             display: inline-block;
+//             width: 60px;
+//             height: 30px;
+//             font-size: .5rem;
+//             color: white;
+//         }
+//     }
+// }

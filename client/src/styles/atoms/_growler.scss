@@ -1,0 +1,9 @@
+.growler {
+    border-radius: $default-border-radius * 3;
+    padding: 1.5em;
+    box-shadow: $shadow-style-3;
+
+    &.green {
+        background-color: $default-green;
+    }
+}

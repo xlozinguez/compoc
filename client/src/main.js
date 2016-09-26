@@ -18,6 +18,7 @@ import reduxConfig from './reduxConfig';
 // Components
 import { AppComponent } from './components/app';
 import { CompanyItemComponent, CompanyDetailsComponent, CompaniesComponent } from './components/companies';
+import { StylesComponent } from './components/styles';
 
 // Styles
 import './styles/styles.scss';
@@ -32,6 +33,7 @@ app.component('app', AppComponent);
 app.component('companyItem', CompanyItemComponent);
 app.component('companies', CompaniesComponent);
 app.component('companyDetails', CompanyDetailsComponent);
+app.component('styles', StylesComponent);
 
 // app.service('APIService', APIService);
 // app.service('CompaniesService', CompaniesService);

@@ -1,0 +1,65 @@
+body {
+    font-family: $font-family;
+    @include font-smoothing('antialiased');
+    font-size: $default-font-size;
+    letter-spacing: $default-letter-spacing;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    font-weight: $font-weight-light;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-light;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    font-weight: $font-weight-light;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-weight: $font-weight-regular;
+}
+
+h5 {
+    font-size: $h5-font-size;
+    font-weight: $font-weight-semibold;
+}
+
+h6 {
+    font-size: $h6-font-size;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: $h6-letter-spacing;
+}
+
+p {
+    padding-bottom: $p-padding-bottom;
+    
+    &.p-lrg {
+        font-size: $font-size;
+    }
+
+    &.p-sm {
+        font-size: .813rem;
+        line-height: $font-size + $base-ratio;
+    }
+}
+
+ul {
+    li {
+        list-style-type: none;
+    }
+}
+
+a,
+a:visited,
+a:hover {
+    color: $a-default-color;
+    cursor: pointer;
+    transition: background .25s ease-in-out;
+}

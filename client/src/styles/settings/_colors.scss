@@ -1,0 +1,19 @@
+$blue: (name: "blue", r: 17, g: 91, b: 124);
+$orange: (name: "orange", r: 227, g: 139, b: 77);
+$green: (name: "green", r: 104, g: 160, b: 107);
+$gray: (name: "gray", r: 130, g: 130, b: 130);
+$black: (name: "black", r: 0, g: 0, b: 0);
+$white: (name: "white", r: 255, g: 255, b: 255);
+
+// $colors: $blue $orange $green $gray $black $white;
+
+$default-blue: rgb(map-get($blue, "r"), map-get($blue, "g"), map-get($blue, "b"));
+$default-green: rgb(map-get($green, "r"), map-get($green, "g"), map-get($green, "b"));
+$default-white: rgb(map-get($white, "r"), map-get($white, "g"), map-get($white, "b"));
+
+$a-default-color: $default-blue;
+
+//SHADOWS
+$shadow-style-1: 0px 41px 80px -55px rgba(0, 0, 0, 0.55), 0px 41px 80px -55px rgba(255, 255, 255, 0.55);
+$shadow-style-2: 0px 2px 12px 15px rgba(0, 0, 0, 0.2);
+$shadow-style-3: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);

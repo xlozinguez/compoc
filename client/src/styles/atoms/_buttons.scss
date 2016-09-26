@@ -1,0 +1,29 @@
+button{
+    cursor: pointer;
+    transition: background .25s ease-in-out;
+    border-radius: $default-border-radius;
+    opacity: $default-opacity;
+    line-height: 1;
+    color: $default-white;
+    border: none;
+
+    &.button-sm {
+        font-size: $small-button-font-size;
+        padding: $small-button-font-size * 0.5, $font-size;
+    }
+
+    &.button-med {
+        font-size: $medium-button-font-size;
+        padding: $medium-button-font-size * 0.75, $medium-button-font-size * 1.5;}
+
+    &.button-lrg {
+        font-size: $large-button-font-size;
+        padding: $large-button-font-size, $large-button-font-size * ($base-ratio + 0.5);
+    }
+
+    &.inactive {
+        opacity: $disabled-opacity;
+    }
+
+    &:hover {}
+}
