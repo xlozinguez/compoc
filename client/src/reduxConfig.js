@@ -7,7 +7,10 @@
  */
 
 import createLogger from 'redux-logger';
+import { createEpicMiddleware } from 'redux-observable';
+
 import reducers from './common/stores/rootReducer';
+import epics from './common/services/rootEpic';
 
 store.$inject = ['$ngReduxProvider'];
 
@@ -18,7 +21,9 @@ export default function store($ngReduxProvider) {
         collapsed: true
     });
 
-    const middlewares = ['ngUiRouterMiddleware', logger];
+    const epicMiddleware = createEpicMiddleware(epics);
+
+    const middlewares = [epicMiddleware, 'ngUiRouterMiddleware', logger];
 
     const enhancers = [ window.devToolsExtension ? window.devToolsExtension() : f => f ];
 

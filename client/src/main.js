@@ -4,10 +4,10 @@ import ngRedux from 'ng-redux';
 import ngReduxUiRouter from 'redux-ui-router'; // https://github.com/neilff/redux-ui-router#listener
 
 // Core
-import { APIService } from './common/api/api-service';
+// import { APIService } from './common/api/api-service';
 
 // Services
-import { CompaniesService } from './common/services/companies.service';
+// import { CompaniesService } from './common/services/companies.service';
 
 // Router
 import { routerConfig } from './routeConfig';
@@ -33,8 +33,8 @@ app.component('companyItem', CompanyItemComponent);
 app.component('companies', CompaniesComponent);
 app.component('companyDetails', CompanyDetailsComponent);
 
-app.service('APIService', APIService);
-app.service('CompaniesService', CompaniesService);
+// app.service('APIService', APIService);
+// app.service('CompaniesService', CompaniesService);
 
 // Load config for ui-router
 app.config(routerConfig);

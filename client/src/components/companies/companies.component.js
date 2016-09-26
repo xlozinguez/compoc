@@ -1,4 +1,3 @@
-import { Observable } from '@reactivex/rxjs';
 import { Component } from 'client/src/utils';
 
 import template from './companies.html';
@@ -13,38 +12,35 @@ import './companies.scss';
 export class CompaniesComponent {
 
     static $inject = [
-        '$ngRedux',
-        'CompaniesService'
+        '$ngRedux'
     ];
 
-    constructor($ngRedux, CompaniesService) {
+    constructor($ngRedux) {
         this.$ngRedux = $ngRedux;
-        this.companiesService = CompaniesService;
-        this.list = Observable.from([]);
-        this.currentCompany = Observable.of({});
+        // this.companiesService = CompaniesService;
     }
 
     $onInit() {
         // Connect to the store
-        this.disconnect = this.$ngRedux.connect(state => ({
-            companies: state.companies,
-            currentCompany: state.currentCompany
-        }))((state, actions) => {
-            this.actions = actions;
-            this.list = state.companies;
-            this.currentCompany = state.currentCompany;
-        });
+        // this.disconnect = this.$ngRedux.connect(state => ({
+        //     companies: state.companies,
+        //     currentCompany: state.currentCompany
+        // }))((state, actions) => {
+        //     this.actions = actions;
+        //     this.list = state.companies;
+        //     this.currentCompany = state.currentCompany;
+        // });
 
         // Fetch Companies
-        this.companies = this.companiesService.fetchCompanies();
+        // this.companies = this.companiesService.fetchCompanies();
     }
 
     $onDestroy() {
         // Disconnect from the store
-        this.disconnect();
+        // this.disconnect();
     }
 
     onCompanySelected(company) {
-        this.companiesService.fetchCompany(company.id);
+        // this.companiesService.fetchCompany(company.id);
     }
 }
