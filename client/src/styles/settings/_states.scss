@@ -1,7 +1,15 @@
-.disabled {
+.inactive {
     opacity: $disabled-opacity;
+    cursor: $cursor-inactive;
 }
 
 .fade {
     opacity: $secondary-opacity;
+}
+
+a,
+a:visited,
+a:hover {
+    color: $a-base-color;
+    cursor: pointer;
 }

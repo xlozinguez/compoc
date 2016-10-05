@@ -1,9 +1,14 @@
 .growler {
-    border-radius: $default-border-radius * 3;
+    //border-radius: $default-border-radius * 3;
     padding: 1.5em;
-    box-shadow: $shadow-style-3;
+    box-shadow: $shadow-style-growler;
+    border-radius: $growler-border-radius;
+    width:21.438em;/*343 - 3.5columns */
+    min-height:7.750em;/*124px;*/
+    font-size:$default-font-size;
+    color:$white;
 
     &.green {
-        background-color: $default-green;
+        background-color: $base-green;
     }
 }

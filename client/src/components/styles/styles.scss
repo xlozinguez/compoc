@@ -34,6 +34,43 @@
     }
 }
 
+.style-note {
+    margin-left:6em;
+    font-weight: 800;
+}
+
+#border-example{
+
+    .border{
+        margin: 12px;
+    }
+}
+
+.Form-example > div {
+    margin-bottom: 12px;
+}
+
+.user-tag {
+    margin:0 0 8px 0;
+}
+
+nav > li {
+    position: relative;
+    display:inline-block;
+    width:auto;
+    float: left;
+    padding-right:5em;
+    text-align: center;
+}
+
+#modal-header-eg {
+    margin: 12px 0;
+}
+
+.Form-example h5 {
+    margin-bottom:.5rem;
+}
+
 // // LIVE STYLEGUIDE
 // .styles {
 //     // COLORS

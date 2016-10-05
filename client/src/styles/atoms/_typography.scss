@@ -3,16 +3,27 @@ body {
     @include font-smoothing('antialiased');
     font-size: $default-font-size;
     letter-spacing: $default-letter-spacing;
+    color:$text-default-color;
+    line-height: $default-line-height;
 }
 
-h1 {
+h1, h2, h3,h4,h6,h6 {
+    margin:0;
+    line-height: $default-line-height;
+}
+
+h1 {        
     font-size: $h1-font-size;
     font-weight: $font-weight-light;
 }
 
 h2 {
-    font-size: $h2-font-size;
+    font-size: $h1-font-size;
     font-weight: $font-weight-light;
+
+    &.h2b{
+        font-size: $h2-font-size;
+    }
 }
 
 h3 {
@@ -35,31 +46,144 @@ h6 {
     font-weight: $font-weight-bold;
     text-transform: uppercase;
     letter-spacing: $h6-letter-spacing;
+    margin:0 0 8px 0;
+}
+
+.text {
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+}
+
+.text-xs {
+        font-size: $xx-small-text;
+        line-height: 1rem;
+    }
+
+.text-sm {
+    font-size: $small-text; //.813rem;
+    line-height: $font-size + $base-ratio; 
+}
+
+//Default
+.text-med {
+    font-size: $default-font-size;
+}
+
+.text-lrg {
+    font-size: $large-text;//16px;
+}
+
+.text-xlrg {
+    font-size: $x-large-text; //18px
 }
 
 p {
     padding-bottom: $p-padding-bottom;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
     
-    &.p-lrg {
-        font-size: $font-size;
+    &.text-lrg {
+        font-size: $large-text;//16px;
     }
 
-    &.p-sm {
-        font-size: .813rem;
+    &.text-sm {
+        font-size: $small-text; //.813rem
         line-height: $font-size + $base-ratio;
     }
-}
 
-ul {
-    li {
-        list-style-type: none;
+    &.text-xs {
+        font-size: $xx-small-text;
+        line-height: 1rem;
     }
 }
 
-a,
-a:visited,
-a:hover {
-    color: $a-default-color;
-    cursor: pointer;
-    transition: background .25s ease-in-out;
+ul, ol {
+
+    &.ul-ol-sm li {
+
+        list-style-type: none;
+        font-size: $small-text;
+    }
+
+    &.ul-ol-med li,
+    &.ul-ol li {
+
+        list-style-type: none;
+        font-size: $default-font-size;
+    }
+
+    &.ul-ol-lrg li {
+
+        list-style-type: none;
+        font-size: $large-text;
+    }
+
+    &.ul-ol-xlrg li {
+
+        list-style-type: none;
+        font-size: $x-large-text;
+    }
+
+    li {
+        list-style-type: none;
+
+         &.text-xs {
+                       
+        }
+
+         &.text-sm {
+                       
+        }
+
+         &.text-med {
+                       
+        }
+
+        &.text-lrg {
+            
+        }
+
+    }
+
+    &.bullet-list li {
+        list-style-type: disc;
+        list-style-position:outside;
+    }
+
+    &.bullet-list.bullet-list-indent li {
+        list-style-position:inside;
+    }
 }
+
+ol {
+    li {
+        list-style-type: decimal;
+    }
+}
+
+.tetx-italic {
+    font-style: $italic;
+}
+
+.text-help {
+    font-size: $help-text-standard;
+    color: $grey-smoke;
+
+    &.text-xs {
+    font-size: $help-text-x-small;
+    line-height: 1.1em;
+    }
+
+}
+
+.text-bold {
+    font-weight: $font-weight-semibold;
+} 
+
+
+
+
+
+
+
+

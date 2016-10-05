@@ -1,6 +1,9 @@
+//Width based on column
 .card {
-    box-shadow: $shadow-style-1;
-    min-width: 500px;
-    background-color: $default-white;
-    padding: 20px;
+    box-shadow: $shadow-style-card;
+    background-color: $base-white;
+    padding: 1.25rem 1.25rem 2.5rem 1.25rem;//20px;
+    margin-bottom: 2.5em;//40px;
+    font-size: $default-font-size;
 }
+

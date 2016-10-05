@@ -43,3 +43,4 @@ app.config(routerConfig);
 
 // Load Redux store config
 app.config(reduxConfig);
+

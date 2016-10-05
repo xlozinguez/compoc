@@ -1,29 +1,77 @@
 button{
+    font-family: $font-family;
     cursor: pointer;
-    transition: background .25s ease-in-out;
-    border-radius: $default-border-radius;
+    transition: $hover-transition-default;
+    border-radius: $rounded-border-radius;
     opacity: $default-opacity;
     line-height: 1;
-    color: $default-white;
+    color: $base-white;
     border: none;
+    outline:none;
 
     &.button-sm {
         font-size: $small-button-font-size;
-        padding: $small-button-font-size * 0.5, $font-size;
+        padding: .538em $font-size;
     }
 
     &.button-med {
         font-size: $medium-button-font-size;
-        padding: $medium-button-font-size * 0.75, $medium-button-font-size * 1.5;}
+        padding: $medium-button-font-size * 0.75 $medium-button-font-size * 1.5;}
 
     &.button-lrg {
         font-size: $large-button-font-size;
-        padding: $large-button-font-size, $large-button-font-size * ($base-ratio + 0.5);
+        padding: $large-button-font-size $large-button-font-size * 1.75;
     }
+
+    // States
 
     &.inactive {
         opacity: $disabled-opacity;
     }
 
-    &:hover {}
+    //Colors & Hovers
+
+    &.green {
+        background-color: $base-green;
+
+        &:hover {
+            background-color: darken($base-green, 10%);
+        }
+    }
+
+    &.blue-steel {
+        background-color: $base-blue;
+
+        &:hover {
+            background-color: darken($base-blue, 10%);
+        }
+    }
+
+    &.blue-midnight {
+        background-color: $blue-midnight;
+
+        &:hover {
+            background-color: darken($blue-midnight, 10%);
+        }
+    }
+
+    &.orange {
+        background-color: $base-orange;
+
+        &:hover {
+            background-color: darken($base-orange, 10%);
+        }
+    }
+
+    &.grey-light {
+        background-color: $grey-light;
+        color:$text-default-color;
+
+        &:hover {
+            background-color: darken($grey-light, 10%);
+        }
+    }
+
+
+
 }

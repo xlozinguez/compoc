@@ -1,0 +1,73 @@
+// Logos
+.logo-wrapper{
+
+
+}
+
+
+.logo {
+    overflow: hidden;
+    box-sizing:inherit;
+    line-height: 0;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-color: $white;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding:4px;
+
+
+    &.xs {
+        width:2.750rem;//44px
+        height: 2.750rem;//44px
+    }
+
+    &.sm {
+        width:4rem;//64px
+        height: 4rem;//64px
+    }
+
+    &.med {
+        width:5.5rem;//88px;
+        height: 5.5rem;//88px;
+    }
+
+    &.lrg {
+        width:6.750rem;//108px;
+        height: 6.750rem;//108px;
+    }
+
+    &.x-lrg {
+        width:8.250rem;//132px;
+        height: 8.250rem;//132px;
+    }
+
+     &.xx-lrg {
+        width:9.5rem;//152px;
+        height: 9.5rem;//152px;
+    }
+}
+
+.logo a {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin: auto;
+    border:none;
+}
+
+/*
+    Container is 8px greater in size on all ends in addition to logo size
+*/

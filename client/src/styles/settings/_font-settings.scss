@@ -1,0 +1,54 @@
+// FONTS
+$font-family: "Open Sans";
+$font-size: 1rem;
+$base-ratio: 0.125;
+$default-font-size: $font-size - $base-ratio;
+$default-letter-spacing: 0.2px;
+$default-line-height: 1.5em;
+$italic: italic;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
+$h1-font-size: ($font-size + $base-ratio) * 2;
+$h2-font-size: $font-size * (2 - 4 * $base-ratio);
+$h3-font-size: $font-size + $base-ratio;
+$h4-font-size: $font-size;
+$h5-font-size: $font-size - $base-ratio;
+$h6-font-size: $font-size - $base-ratio * 2;
+
+$h6-letter-spacing: 0.3px;
+
+$xx-small-text: 0.688rem;//11px;
+$x-small-text: $font-size - $base-ratio * 2;// .75rem; //12px
+$small-text: 0.813rem;//13px
+$standard-text: $default-font-size;//14px
+$large-text: $font-size; //16px 
+$x-large-text: $font-size + $base-ratio; //18px 
+
+$small-button-font-size: $small-text;
+$medium-button-font-size: $font-size;
+$large-button-font-size: $font-size;
+
+
+$p-font-size: $default-font-size;/*14px*/
+
+$p-padding-bottom: 8px;
+
+
+$tag-letter-spacing: .5px;
+
+$center: center;
+
+$uppercase: uppercase;
+
+$help-text-x-small: $xx-small-text;
+$help-text-standard: $small-text;
+
+
+
+
+

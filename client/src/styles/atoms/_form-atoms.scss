@@ -1,0 +1,222 @@
+input, 
+select, 
+textarea,
+keygen {
+    display:block;
+    font-family: "Open Sans";
+    letter-spacing: $default-letter-spacing;
+    color: $text-default-color;
+    border:$default-border;
+    background-color: transparent;
+    font-size: $default-font-size;
+    height:$font-size*2;/*32px*/
+    padding:0 0.625em; /*10px*/
+    transition:$border-color-transition, $border-width-transition;
+    box-sizing: $default-box-sizing;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $base-blue;
+    }
+
+    &.inactive {
+
+    }
+
+    &.edit{
+        border-style: dotted;
+    }
+
+    &.edit:focus {
+        border-style: dotted;
+    }
+
+    &.error, &.error:focus {
+        border: 1px solid $axial-red;
+        background-color: $error-background;
+        color:$axial-red;
+    }
+
+    &.error:focus {
+        border-width: 2px;
+        background-color: $white;
+        //color:$text-default-color;
+    }
+
+    &.warning {
+        border: 1px solid $orange-tiger;
+    }
+
+    &.warning:focus {
+        border-width: 2px;
+    }
+    
+}
+input, 
+select, 
+input {
+
+    font-size: $default-font-size; //$px-14;
+
+    &.input-sm {
+
+    }
+
+    &.input-med {
+        font-size: inherit;
+        min-height: 2.429em;/*34px*/
+    }
+
+    &.input-lrg {
+        font-size: $large-text;
+        min-height: 2.250em;/*36px*/
+    }
+
+}
+
+
+//Labels
+label{
+
+    font-size: $default-font-size; //$px-14;
+    display: inline-block;
+
+    &.error{
+        color:$axial-red;
+    }
+
+    &.warning {
+        color:$orange-tiger;
+    }
+
+    &.sm, &.label-sm{
+        font-size: $small-text;
+
+    }
+    //standard
+    &.med, &.label-med{
+        font-size: inherit;
+    }
+
+    &.lrg, &.label-lrg{
+        font-size:$large-text;
+    }
+
+    &.xl, &.label-xl{
+        font-size:$x-large-text;
+    }
+
+} 
+
+.check-box-button-style,
+.check-box-list-style { 
+    transition:$hover-transition-default, $border-color-transition;
+    position: relative;
+    display: inline-block;
+}
+
+.check-box-button-style {
+    font-size: $large-text;
+    height:2em;
+    width:14.25em;
+    background-color: $white;
+    border: 1px solid $grey-mid-light;
+    border-radius: $rounded-border-radius;
+
+    .check-box-button-style label {
+        text-align: $center;
+        vertical-align: middle;
+        line-height: 100%;
+    }
+
+    &:hover {
+        background-color: $grey-mid-light;
+        border-color: transparent;
+    }
+
+    &.checked, &.darkbutton, &.checked:hover  {
+        background-color: $blue-midnight;
+        border-color: transparent;
+        color:$white;
+    }
+}
+
+.check-box-list-style {
+    width:392px;
+    height:44px;
+    background-color: $grey-background;
+    border:none;
+    padding:15px 20px;
+
+    &.checked, &:hover {
+        background:$blue-artic;
+        cursor: pointer;
+        color:$blue-midnight;
+    }
+
+    &.checked label {
+        color:$blue-midnight;
+    }
+}
+
+ .check-box-list-style input, .check-box-button-style input {
+        position: absolute;
+        opacity:0;
+        width:100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        top:0;
+        left: 0;
+        cursor: pointer;
+    }
+
+.check-box-list-style label, .check-box-button-style label {
+    position: absolute;
+    line-height:1;
+    width:100%;
+    vertical-align: middle;
+}
+
+.check-box-list-style label {
+    
+}
+
+.check-box-button-style label {
+    text-align: center;
+    line-height: 2.2em;
+}
+
+
+textarea {
+    min-height: 5em;
+    display: block;
+    resize:auto;
+    box-sizing:padding-box;
+    overflow: hidden;
+    padding:.5em;
+}
+
+.pill {
+    display: $inline-block;
+    width:auto;
+    min-width: 5em;
+    padding:0 8px;
+    line-height:$default-line-height + ($base-ratio*2);
+    text-transform: capitalize;
+
+    &.sm {
+        font-size: $small-text;
+    }
+}
+
+.validation-text {
+    &.green, &.valid {
+        color:$green-mint;
+    }  
+
+    &.red, &.error {
+        color:$axial-red;
+    } 
+}
+
