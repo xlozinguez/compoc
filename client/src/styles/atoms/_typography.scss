@@ -49,7 +49,17 @@ h6 {
     margin:0 0 8px 0;
 }
 
-.text {
+th {
+    font-weight: $font-weight-bold;
+    font-size: $small-text;
+}
+
+td {
+    font-size: $med-text;
+}
+
+
+.text-baseline {
     font-size: $default-font-size;
     line-height: $default-line-height;
 }
@@ -99,10 +109,13 @@ p {
 
 ul, ol {
 
+    line-height: $default-line-height;
+
     &.ul-ol-sm li {
 
         list-style-type: none;
         font-size: $small-text;
+        line-height: $font-size + $base-ratio; 
     }
 
     &.ul-ol-med li,
@@ -128,11 +141,11 @@ ul, ol {
         list-style-type: none;
 
          &.text-xs {
-                       
+            line-height: 1.1em;                   
         }
 
          &.text-sm {
-                       
+            line-height: $font-size + $base-ratio;      
         }
 
          &.text-med {
@@ -178,10 +191,11 @@ ol {
 
 .text-bold {
     font-weight: $font-weight-semibold;
+}
+
+.text-weight-normal {
+    font-weight:$font-weight-regular;
 } 
-
-
-
 
 
 

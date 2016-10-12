@@ -29,6 +29,7 @@ $circle:50%;
 $default-border-color:$grey;
 $default-border-size: 1px;
 $default-border-style: solid;
+$dotted-border-style: dotted;
 $border-none:none;
 
 
@@ -95,4 +96,8 @@ div, section, article, figure, table, span, input, select, textarea
 .truncate-toggle {
     font-style: inherit;
     color:$grey;
+}
+
+.dotted {
+    border-style: $dotted-border-style;
 }
