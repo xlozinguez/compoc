@@ -10,17 +10,18 @@ button{
     outline:none;
 
     &.button-sm {
-        font-size: $small-button-font-size;
+        font-size: $button-text-small;
         padding: .538em $font-size;
     }
 
     &.button-med {
-        font-size: $medium-button-font-size;
-        padding: $medium-button-font-size * 0.75 $medium-button-font-size * 1.5;}
+        font-size: $button-text-medium;
+        padding: $button-text-medium * 0.75 $button-text-medium * 1.5;
+    }
 
     &.button-lrg {
-        font-size: $large-button-font-size;
-        padding: $large-button-font-size $large-button-font-size * 1.75;
+        font-size: $button-text-large;
+        padding: $button-text-large $button-text-large * 1.75;
     }
 
     // States

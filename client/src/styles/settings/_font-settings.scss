@@ -30,9 +30,9 @@ $baseline-text: $default-font-size;//14px
 $large-text: $font-size; //16px 
 $x-large-text: $font-size + $base-ratio; //18px 
 
-$small-button-font-size: $small-text;
-$medium-button-font-size: $font-size;
-$large-button-font-size: $font-size;
+$button-text-small: $small-text;
+$button-text-medium: $font-size;
+$button-text-large: $font-size;
 
 
 $p-font-size: $default-font-size;/*14px*/

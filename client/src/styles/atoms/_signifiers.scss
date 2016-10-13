@@ -45,6 +45,15 @@ hr {
     }
 }
 
+.cust-bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: $circle;
+    display: inline-block;
+    background: #4a4a4a;
+    margin-right: .5rem;
+}
+
 .blue-dot {
     background-color: $blue-sky;
     display: inline-block;
