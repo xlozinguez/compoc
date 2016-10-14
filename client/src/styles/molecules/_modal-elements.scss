@@ -1,0 +1,67 @@
+.header{
+
+    &.modal-header {
+        height:3.750rem;
+        line-height:3.750rem;
+        width:100%;
+        padding:0 2rem;
+    }
+
+    &.dark{
+        background-color: $grey-shadow;
+    }
+
+}
+
+
+.header .h2b {
+    color:$white;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+.modal-content-nav {
+    margin-top:2.25rem;
+}
+
+.modal-content-nav .previous p {
+    text-align: left;
+}
+
+.modal-content-nav .next p {
+    text-align:right; 
+}
+
+////////////////////////////////////////////////////////////////////////////
+/*HELP MODAL --- E.G, CEO HP*/
+///////////////////////////////////////////////////////////////////////////
+
+/*4 columns*/
+
+.help-modal {
+    width:50%;
+    min-height: 510px;
+    height: 510px;
+    margin:0 auto;
+}
+
+/*1 column TBD*/
+.help-modal-menu {
+    background-color: $blue-sky;
+    width:243px;
+}
+
+
+.help-modal .help-steps-list-item a {
+
+}
+
+.help-modal .help-content-container {
+    padding: 1.5rem;
+    width:485px;/*3 Col*/
+}
+
+.help-modal .help-content-container h2 {
+    color:$grey-shadow;
+    margin-bottom: 1rem;
+}

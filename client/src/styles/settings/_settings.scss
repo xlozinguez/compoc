@@ -1,0 +1,103 @@
+////////////////////////////////////////////////////////////////////////////////////////////////// 
+/*Variables*/
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Element Properties
+$default-box-sizing: border-box;
+
+$left: left;
+$right: right;
+$clear-fix: both;
+
+$inline-block: inline-block;
+
+
+// Opacity
+$default-opacity: 100;
+$disabled-opacity: 0.3;
+$secondary-opacity: 0.7;
+
+$modal-bg-opacity: $secondary-opacity;
+
+// Borders
+$default-border-radius: 0px;
+$rounded-border-radius: 3px;
+$growler-border-radius: $rounded-border-radius * 2;
+$pill-style-radius: $default-font-size;
+$circle:50%;
+
+$default-border-color:$grey;
+$default-border-size: 1px;
+$default-border-style: solid;
+$dotted-border-style: dotted;
+$border-none:none;
+
+
+$default-border: $default-border-size $default-border-style $default-border-color;
+
+//Cursor
+$cursor-inactive:not-allowed;
+
+//Link Style
+
+
+//Transitions
+$hover-transition-default: background .25s ease-in-out;
+
+$border-color-transition: border-color .25s ease-in-out;
+
+$border-width-transition: border-size .005s ease-in-out;
+
+//SHADOWS
+$shadow-style-card: 0px 41px 80px -55px rgba(0, 0, 0, 0.55), 0px 41px 80px -55px rgba(255, 255, 255, 0.55);
+$shadow-style-card-back: 0px 2px 12px 15px rgba(0, 0, 0, 0.2);
+$shadow-style-growler: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+$shadow-style-user-img: 0px 4px 15px 0px rgba(0,0,0,0.25);
+$shadow-style-sidebar-right: -5px 0px 15px -5px rgba(0,0,0,0.25);
+$shadow-style-sidebar-left: 5px 0px 15px -5px rgba(0, 0, 0, 0.25);
+
+//Full BG
+$bg-size-full:cover;
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////// 
+/*Global Classes*/
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+div, section, article, figure, table, span, input, select, textarea
+{
+    box-sizing:$default-box-sizing;
+    //@include box-sizing(border-box);
+}
+
+.left {
+    float: $left;
+}
+
+.right {
+    float: $right
+}
+
+.clear {
+    content: "";
+    clear: $clear-fix;
+}
+
+.pill, .tag {
+    display: block;
+    border-radius:$pill-style-radius;
+    line-height: 2em;
+    width:auto;
+    width:7.333em;
+    background-color: $grey-mid-light;
+    color: $grey-shadow;
+}
+
+.truncate-toggle {
+    font-style: inherit;
+    color:$grey;
+}
+
+.dotted {
+    border-style: $dotted-border-style;
+}

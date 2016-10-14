@@ -1,50 +1,29 @@
-@import
-    'mixins',
-    'settings';
+@import 'mixins/font-smoothing';
+    
+@import 
+        'settings/font-settings',
+        'settings/colors',
+        'settings/settings',
+        'settings/states',
+        'settings/reset';
 
-body {
-    font-family: $font-family;
-    @include font-smoothing('antialiased');
-    font-size: $default-font-size;
-    letter-spacing: $default-letter-spacing;
+@import 'atoms/typography',
+        'atoms/buttons',
+        'atoms/cards',
+        'atoms/icons',
+        'atoms/form-atoms',
+        'atoms/profiles',
+        'atoms/tags',
+        'atoms/signifiers',
+        'atoms/modal',
+        'atoms/logos',
+        'atoms/sidebar',
+        'atoms/growler';
 
-    h1 {
-        font-size: $h1-font-size;
-        font-weight: $font-weight-light;
-    }
-    h2 {
-        font-size: $h2-font-size;
-        font-weight: $font-weight-light;
-    }
-    h3 {
-        font-size: $h3-font-size;
-        font-weight: $font-weight-light;
-    }
-    h4 {
-        font-size: $h4-font-size;
-        font-weight: $font-weight-regular;
-    }
-    h5 {
-        font-size: $h5-font-size;
-        font-weight: $font-weight-semibold;
-    }
-    h6 {
-        font-size: $h6-font-size;
-        font-weight: $font-weight-bold;
-        text-transform: uppercase;
-        letter-spacing: $h6-letter-spacing;
-    }
-    p {
-        padding-bottom: $p-padding-bottom;
-    }
-    ul {
-        li {
-            list-style-type: none;
-        }
-    }
-    a,
-    a:visited,
-    a:hover {
-        color: $a-default-color;
-    }
-}
+@import 'molecules/sidebar-nav',
+        'molecules/modal-elements',
+        'molecules/expand-list',
+        'molecules/forms',
+        'molecules/announcements';
+
+

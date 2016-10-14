@@ -50,9 +50,20 @@ export function routerConfig($stateProvider, $urlRouterProvider) {
     //     }
     // }
 
+    var styleState = {
+        name: 'app.styles',
+        url: '/styles',
+        views: {
+            '@app': {
+                template: '<styles></styles>'
+            }
+        }
+    }
+
     $stateProvider.state(appState);
     $stateProvider.state(companiesState);
     // $stateProvider.state(companyState);
+    $stateProvider.state(styleState);
 
     $urlRouterProvider.otherwise('/companies');
 }

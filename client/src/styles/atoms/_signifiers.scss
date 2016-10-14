@@ -1,0 +1,131 @@
+// Signifiers
+// Global ornamental elements (e.g. borders, colors decorations)
+
+$default-border-color:$grey;
+$default-border-size: 1px;
+$default-border-style: solid;
+$border-none:none;
+
+
+$default-border: $default-border-size $default-border-style $default-border-color;
+
+hr {
+    height:1px;
+    border:$default-border;
+    border-top:$border-none;
+    border-right:$border-none;
+    border-left:$border-none;
+}
+
+.border {
+    border:$default-border;
+
+    &[data-btm]{
+        border-top:$border-none;
+        border-right:$border-none;
+        border-left:$border-none;
+    }
+
+    &[data-top]{
+        border-bottom:$border-none;
+        border-right:$border-none;
+        border-left:$border-none;
+    }
+
+    &[data-right]{
+        border-top:$border-none;
+        border-bottom:$border-none;
+        border-left:$border-none;
+    }
+
+    &[data-left]{
+        border-top:$border-none;
+        border-right:$border-none;
+        border-bottom:$border-none;
+    }
+}
+
+.cust-bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: $circle;
+    display: inline-block;
+    background: #4a4a4a;
+    margin-right: .5rem;
+}
+
+.blue-dot {
+    background-color: $blue-sky;
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border-radius: $circle;
+
+    &:after {
+        content: "";
+        width: 1px;
+        height: 95px;
+        background-color: $grey;
+        display: flex;
+        margin: 19px auto;
+    }
+}
+
+.beta {
+    font-size: $h6-font-size;
+    font-weight: $font-weight-bold;
+}
+
+.counter {
+    display:block;
+    border-radius: $circle;
+    font-size: $x-small-text;
+    font-weight: $font-weight-bold;
+    text-align: $center;
+    color:$white;
+    line-height: 1.25rem;
+    width: 1.25rem;
+    background-color: $grey;
+
+    &.orange {
+        background-color: $orange-melon;
+    }
+}
+
+.nav-on {
+    height:3px;
+    content: "";
+    display: block;
+    width:100%;
+    background-color:$orange-melon;
+    margin-top: 4px;
+}
+
+.progress-wrapper {
+    display: inline-block;
+    border-bottom: 2px solid rgba(0,0,0,.28);
+}
+
+.progress-bar-step {
+    padding: 2px .625em;
+    width:auto;
+    font-size: $small-text;
+    text-transform: $uppercase;
+    opacity: $disabled-opacity;
+    text-align: $center;
+    color:$grey-shadow;
+}
+
+.progress-bar-step.active {
+    opacity: $default-opacity;
+    border-bottom: 2px $default-border-style $blue-navy;
+    color:$blue-navy;
+}
+
+.previous > p {
+    text-align: left;
+}
+
+.next > p {
+    text-align:right; 
+}

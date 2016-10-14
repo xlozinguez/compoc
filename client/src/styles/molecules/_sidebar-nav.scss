@@ -1,0 +1,32 @@
+.sidebar h2, 
+.sidebar-nav h2 {
+    color:$white;
+    padding: 1.5rem;
+}
+
+.sidebar-list li,
+.sidebar-nav li {
+     line-height: 2.5em;
+     color:$white;
+     transition: $hover-transition-default;
+
+    &:hover, &:active, &.on  {
+        background-color: $blue-navy;
+    }
+
+    &:hover {
+        
+    }
+}
+
+.sidebar-list li a {
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+    padding-left:1.5rem;
+}
+
+.sidebar.blue .sidebar-list li a,
+.sidebar.green .sidebar-list li a, {
+    color:$white;
+}

@@ -1,0 +1,31 @@
+.sidebar {
+    width:243px;
+    height: 100%;
+    overflow: hidden;
+
+    &.left, &.sidebar-left {
+        box-shadow: $shadow-style-sidebar-left;
+    }
+
+    &.blue {
+        background-color: $blue-sky;
+    }
+
+    &.green {
+        background-color: $green-sea;
+    }
+
+    &.grey {
+        background-color: $grey-mid-light;
+    }
+}
+
+
+.sidebar.blue li a,
+.sidebar.green li a, {
+    color:$white;
+}
+
+.sidebar-inner {
+    padding:1.25rem 1.25rem 2.5rem 1.25rem;//20px;
+}

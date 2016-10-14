@@ -1,0 +1,30 @@
+
+// $blue: (name: 'blue', r: 25, g: 131, b: 179, shade_count: 4);
+// $orange: (name: 'orange', r: 216, g: 89, b: 0, shade_count: 4);
+// $green: (name: 'green', r: 40, g: 120, b: 43, shade_count: 4);
+// $colors: $blue $orange $green;
+
+// Below generates color shades
+// @each $color in ($colors) {
+//     .default-bkg-color-#{map-get($color, "name")}{
+//         background-color: rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b"));
+//     }
+//     .default-color-#{map-get($color, "name")} {
+//         color: rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b"));
+//     }
+
+//     @for $i from 1 through map-get($color, "shade_count") {
+//         .lighter-bkg-color-#{map-get($color, "name")}-#{$i} {
+//             background-color: lighten(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+//         }
+//         .lighter-color-#{map-get($color, "name")}-#{$i} {
+//             color: lighten(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+//         }
+//         .darker-bkg-color-#{map-get($color, "name")}-#{$i} {
+//             background-color: darken(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+//         }
+//         .darker-color-#{map-get($color, "name")}-#{$i} {
+//             color: darken(rgb(map-get($color, "r"), map-get($color, "g"), map-get($color, "b")), ($i * 5));
+//         }  
+//     }
+// }

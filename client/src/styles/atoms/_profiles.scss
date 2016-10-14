@@ -1,0 +1,39 @@
+//User Images
+
+.user-img {
+    display: block;
+    background-image: url('http://vignette3.wikia.nocookie.net/thebiglebowski/images/7/7e/The_Dude.jpeg/revision/latest?cb=20111216183045');
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-radius: $circle;
+    background-size: $bg-size-full;
+    box-shadow: $shadow-style-user-img;
+    width:auto;
+    height: 100%;
+
+    &.sq {
+        border-radius:0;
+    }
+
+    &.lrg {
+        width:6.750em;//108px;
+        height: 6.750em;//108px;
+    }
+
+    &.med {
+        width:5em;//80px;
+        height: 5em;//80px;
+    }
+
+    &.sm {
+        width:4em;//64px
+        height: 4em;//64px
+    }
+
+    &.xs {
+        width:2.750em;//44px
+        height: 2.750em;//44px
+    }
+}

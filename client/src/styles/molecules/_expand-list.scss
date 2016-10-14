@@ -1,0 +1,14 @@
+.expand-list {
+    width: 100%;
+}
+
+.epxpand-list li,
+.expand-li {
+    line-height: 2.25rem;
+    border-bottom: $default-border;
+    padding: 0 8px;
+
+    &:first-child {
+        border-top: $default-border;
+    }
+}

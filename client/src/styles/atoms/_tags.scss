@@ -1,0 +1,43 @@
+//Tags
+.tag {
+    color:$white;
+    text-align: $center;
+    font-size: $h6-font-size;
+    background-color: $grey-medium;
+
+
+    &.user-tag {
+        line-height: 2em;
+        min-width:7.333em;
+        width:7.333em;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: $tag-letter-spacing;
+    
+        &[data-role="advisor"]{
+            background-color: $orange-melon;
+        }
+    
+        &[data-role="lender"]{
+           background-color: $green-sea;
+        }
+    
+        &[data-role="buyer"]{
+            background-color: $blue-midnight;
+        }
+    
+        &[data-role="investor"]{
+            background-color: $blue-sky;
+        }
+    }
+
+    &.premium-tag {
+        background-color: $admin-gold;
+        font-weight: $font-weight-semibold;
+        min-width:6em;
+        width:6em;
+    }
+}
+
+
+

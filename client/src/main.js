@@ -4,10 +4,10 @@ import ngRedux from 'ng-redux';
 import ngReduxUiRouter from 'redux-ui-router'; // https://github.com/neilff/redux-ui-router#listener
 
 // Core
-import { APIService } from './common/api/api-service';
+// import { APIService } from './common/api/api-service';
 
 // Services
-import { CompaniesService } from './common/services/companies.service';
+// import { CompaniesService } from './common/services/companies.service';
 
 // Router
 import { routerConfig } from './routeConfig';
@@ -18,6 +18,7 @@ import reduxConfig from './reduxConfig';
 // Components
 import { AppComponent } from './components/app';
 import { CompanyItemComponent, CompanyDetailsComponent, CompaniesComponent } from './components/companies';
+import { StylesComponent } from './components/styles';
 
 // Styles
 import './styles/styles.scss';
@@ -32,12 +33,14 @@ app.component('app', AppComponent);
 app.component('companyItem', CompanyItemComponent);
 app.component('companies', CompaniesComponent);
 app.component('companyDetails', CompanyDetailsComponent);
+app.component('styles', StylesComponent);
 
-app.service('APIService', APIService);
-app.service('CompaniesService', CompaniesService);
+// app.service('APIService', APIService);
+// app.service('CompaniesService', CompaniesService);
 
 // Load config for ui-router
 app.config(routerConfig);
 
 // Load Redux store config
 app.config(reduxConfig);
+

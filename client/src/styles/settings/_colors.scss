@@ -1,0 +1,134 @@
+/****
+RGB SETTINGS
+****/
+
+
+//Gray Scale (White to Black)
+$white: (name: "white", r: 255, g: 255, b: 255);
+$grey-very-light: (name: "grey-very-light", r: 247, g: 247, b: 247);
+$grey-background: (name: "grey-background", r: 244, g: 244, b: 244);
+$grey-light: (name: "grey-light", r: 238, g: 238, b: 238);
+$grey-mid-light: (name:"grey-mid-light", r: 222, g: 222, b:222);
+$grey: (name: "grey", r: 200, g: 200, b: 200);
+$grey-medium: (name: "grey-medium", r: 164, g: 164, b: 164);
+$grey-smoke: (name: "grey-smoke", r: 130, g: 130, b: 130); 
+$grey-dark: (name: "grey-dark", r: 102, g: 102, b: 102);
+$grey-shadow: (name: "grey-shadow", r: 74, g: 74, b: 74);
+$grey-dark-as-hell: (name: "grey-dark-as-hell", r: 51, g:51, b: 51);
+$black: (name: "black", r: 0, g: 0, b: 0);
+
+
+//Blues
+$blue-midnight: (name: "blue-midnight", r: 12, g: 65, b: 89);
+$blue-navy: (name: "blue-navy", r: 17, g: 91, b: 124);
+$blue-steel: (name: "blue-steel", r: 25, g: 131, b: 179);
+$blue-sky: (name: "blue-sky", r: 94, g: 168, b: 201);
+$blue-glacier: (name: "blue-glacier", r: 140, g: 193, b: 217);
+$blue-artic: (name: "blue-artic", r: 186, g: 218, b: 232);
+$blue-highlight: (name: "blue-highlight", r: 220, g: 236, b: 243);
+$blue-ice: (name: "blue-ice", r: 231, g: 239, b: 243);
+
+//Greens
+$green-forest: (name: "green-forest", r: 19, g: 59, b: 21);
+$green-leaf: (name: "green-leaf", r: 27, g: 83, b: 30);
+$green-mint: (name: "green-mint", r: 40, g: 120, b: 43);
+$green-sea: (name: "green-sea", r: 104, g: 160, b: 107);
+$green-mist: (name: "green-mist", r: 147, g: 187, b: 149);
+$green-haze: (name: "green-haze", r: 179, g: 207, b: 181);
+
+
+//Oranges
+$orange-rust: (name: "orange-rust", r: 107, g: 44, b: 0);
+$orange-clay: (name: "orange-rust", r: 150, g: 62, b: 0);
+$orange-tiger: (name: "orange-rust", r: 216, g: 89, b: 0);
+$orange-melon: (name: "orange-rust", r: 227, g: 139, b: 77);
+$orange-ginger: (name: "orange-rust", r: 235, g: 172, b: 128);
+
+//CUSTOM ONE-OFFS
+$admin-teal: (name: "admin-teal", r: 18, g: 229, b: 252);
+$admin-purple: (name: "admin-purple", r: 171, g: 54, b: 239);
+$admin-gold: (name: "admin-gold", r: 255, g: 191, b: 0);
+$axial-red: (name: "axial-red", r: 172, g: 13, b: 25);
+$red: (name: "red", r: 226, g: 0, b: 26);
+$error-background: (name: "error-background", r: 252, g: 243, b: 244);
+$axial-blue-dark: (name: "axial-blue-dark", r: 0, g: 61, b: 118);
+$axial-blue-light: (name: "axial-blue-light", r: 0, g: 74, b: 153);
+
+
+//---------------------------------------------------------------------------------------------------//
+//   MAP RGB COLORS
+//--------------------------------------------------------------------------------------------------//
+
+/*------------------------
+APP COLORS
+-------------------------*/
+
+//Gray Scale (White to Black)
+$white: rgb(map-get($white, "r"), map-get($white, "g"), map-get($white, "b"));
+$grey-very-light: rgb(map-get($grey-very-light, "r"), map-get($grey-very-light, "g"), map-get($grey-very-light, "b"));
+$grey-background: rgb(map-get($grey-background, "r"), map-get($grey-background, "g"), map-get($grey-background, "b"));
+$grey-light: rgb(map-get($grey-light, "r"), map-get($grey-light, "g"), map-get($grey-light, "b"));
+$grey-mid-light: rgb(map-get($grey-mid-light, "r"), map-get($grey-mid-light, "g"), map-get($grey-mid-light, "b"));
+$grey: rgb(map-get($grey, "r"), map-get($grey, "g"), map-get($grey, "b"));
+$grey-medium: rgb(map-get($grey-medium, "r"), map-get($grey-medium, "g"), map-get($grey-medium, "b"));
+$grey-smoke: rgb(map-get($grey-smoke, "r"), map-get($grey-smoke, "g"), map-get($grey-smoke, "b"));
+$grey-dark: rgb(map-get($grey-dark, "r"), map-get($grey-dark, "g"), map-get($grey-dark, "b"));
+$grey-shadow: rgb(map-get($grey-shadow, "r"), map-get($grey-shadow, "g"), map-get($grey-shadow, "b"));
+$grey-dark-as-hell: rgb(map-get($grey-dark-as-hell, "r"), map-get($grey-dark-as-hell, "g"), map-get($grey-dark-as-hell, "b"));
+$black: rgb(map-get($black, "r"), map-get($black, "g"), map-get($black, "b"));
+
+//BLUES
+$blue-midnight: rgb(map-get($blue-midnight, "r"), map-get($blue-midnight, "g"), map-get($blue-midnight, "b"));
+$blue-navy: rgb(map-get($blue-navy, "r"), map-get($blue-navy, "g"), map-get($blue-navy, "b"));
+$blue-steel: rgb(map-get($blue-steel, "r"), map-get($blue-steel, "g"), map-get($blue-steel, "b"));
+$blue-sky: rgb(map-get($blue-sky, "r"), map-get($blue-sky, "g"), map-get($blue-sky, "b"));
+$blue-glacier: rgb(map-get($blue-glacier, "r"), map-get($blue-glacier, "g"), map-get($blue-glacier, "b"));
+$blue-artic: rgb(map-get($blue-artic, "r"), map-get($blue-artic, "g"), map-get($blue-artic, "b"));
+$blue-highlight: rgb(map-get($blue-highlight, "r"), map-get($blue-highlight, "g"), map-get($blue-highlight, "b"));
+$blue-ice: rgb(map-get($blue-ice, "r"), map-get($blue-ice, "g"), map-get($blue-ice, "b"));
+
+//Greens
+$green-forest: rgb(map-get($green-forest, "r"), map-get($green-forest, "g"), map-get($green-forest, "b"));
+$green-leaf: rgb(map-get($green-leaf, "r"), map-get($green-leaf, "g"), map-get($green-leaf, "b"));
+$green-mint: rgb(map-get($green-mint, "r"), map-get($green-mint, "g"), map-get($green-mint, "b"));
+$green-sea: rgb(map-get($green-sea, "r"), map-get($green-sea, "g"), map-get($green-sea, "b"));
+$green-mist: rgb(map-get($green-mist, "r"), map-get($green-mist, "g"), map-get($green-mist, "b"));
+$green-haze: rgb(map-get($green-haze, "r"), map-get($green-haze, "g"), map-get($green-haze, "b"));
+
+//Oranges
+$orange-rust: rgb(map-get($orange-rust, "r"), map-get($orange-rust, "g"), map-get($orange-rust, "b"));
+$orange-clay: rgb(map-get($orange-clay, "r"), map-get($orange-clay, "g"), map-get($orange-clay, "b"));
+$orange-tiger: rgb(map-get($orange-tiger, "r"), map-get($orange-tiger, "g"), map-get($orange-tiger, "b"));
+$orange-melon: rgb(map-get($orange-melon, "r"), map-get($orange-melon, "g"), map-get($orange-melon, "b"));
+$orange-ginger: rgb(map-get($orange-ginger, "r"), map-get($orange-ginger, "g"), map-get($orange-ginger, "b"));
+
+
+//CUSTOM ONE-OFFS
+$axial-red: rgb(map-get($axial-red, "r"), map-get($axial-red, "g"), map-get($axial-red, "b"));
+$admin-gold: rgb(map-get($admin-gold, "r"), map-get($admin-gold, "g"), map-get($admin-gold, "b"));
+$error-background: rgb(map-get($error-background, "r"), map-get($error-background, "g"), map-get($error-background, "b"));
+
+//DEFAULTS
+$base-blue: $blue-steel;
+$base-green: $green-sea;
+$base-orange: $orange-tiger;
+$base-white: $white;
+
+/*----------------
+TEXT COLORS
+------------------*/
+$base-text-color: $grey-shadow;
+
+
+/*----------------
+VARIABLE PROPERTIES
+------------------*/
+
+$text-default-color: $base-text-color;//#4a4a4a
+$a-base-color: $base-blue;
+
+
+
+
+
+
